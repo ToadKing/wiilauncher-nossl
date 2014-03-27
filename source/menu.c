@@ -54,7 +54,7 @@ void sys_init(void)
 void resetscreen()
 {
 	printf("\x1b[2J");
-	printf("\n    WiiLauncher v0.1 (c) 2013 conanac");
+	printf("\n    WiiLauncher /w NoSSL v0.1 (c) 2013 conanac + Toad King");
 	printf("\n    Thanks to developers of: geckoos, wiiflow, tinyload, ftpii, wiixplorer,");
 	printf("\n    cleanrip. And others whose codes are reused in this wiibrew");
 	printf("\n    USB Gecko = [%s]      WiFi Debug = [%s]", geckoattached ? "ON" : "OFF",

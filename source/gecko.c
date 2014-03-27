@@ -29,6 +29,7 @@ void gprintf(const char *format, ...)
 
 bool InitGecko()
 {
+	return geckoinit;
 	memset(gprintfBuffer, 0, 256);
 	u32 geckoattached = usb_isgeckoalive(EXI_CHANNEL_1);
 	if(geckoattached)

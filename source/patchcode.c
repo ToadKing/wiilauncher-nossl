@@ -389,6 +389,23 @@ void vidolpatcher(void *addr, u32 len)
 	}
 }
 
+void nossl(void *addr, u32 len)
+{
+	char *cur = (char *)addr;
+	const char *end = cur + len - 8;
+
+	do
+	{
+		if (memcmp(cur, "https://", 8) == 0 && cur[8] != 0)
+		{
+			int len = strlen(cur);
+			memmove(cur + 4, cur + 5, len - 5);
+			cur[len - 1] = 0;
+			cur += len;
+		}
+	} while (++cur < end);
+}
+
 void PatchAspectRatio(void *addr, u32 len, u8 aspect)
 {
 	if(aspect > 1)

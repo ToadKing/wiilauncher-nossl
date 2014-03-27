@@ -49,6 +49,7 @@ void WifiGecko_Close()
 
 int WifiGecko_Connect()
 {
+	return -1;
 	if(connection >= 0)
 		return connection;
 	

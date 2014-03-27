@@ -515,6 +515,11 @@ s32 rundisc() {
 
 	*(vu32*)0xCC003024 = 1;
 
+	// for online
+	*(u32*)0x80003180 = *(u32*)0x80000000;
+
+	DCFlushRange((void*)0x80000000, 0x3F00);
+
  	if(AppEntrypoint == 0x3400)
 	{
  		if(hooktype)

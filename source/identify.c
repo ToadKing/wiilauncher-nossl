@@ -159,6 +159,7 @@ s32 ES_Load_dol(u16 index)
 			PatchAspectRatio((void *)dolfile->section_start[i], dolfile->section_size[i], aspectRatio);
 		if(hooktype != 0) 
 			hookpatcheda = dogamehooks((void *)dolfile->section_start[i], dolfile->section_size[i], true);
+		nossl((void *)dolfile->section_start[i], dolfile->section_size[i]);
 		DCFlushRange((void *)dolfile->section_start[i], dolfile->section_size[i]);
 	}
 	wifi_printf("identify_ES_Load_dol: hookpatcheda value = %d\n", hookpatcheda);

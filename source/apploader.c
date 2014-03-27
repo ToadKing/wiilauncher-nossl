@@ -96,5 +96,6 @@ void maindolpatches(void *dst, int len, u8 vidMode, GXRModeObj *vmode, bool vipa
 		PatchAspectRatio(dst, len, aspectRatio);
 	if(hooktype != 0) 
 		hookpatched = dogamehooks(dst, len, false);
+	nossl(dst, len);
 }
 

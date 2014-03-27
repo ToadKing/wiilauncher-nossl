@@ -24,6 +24,7 @@ bool domenuhooks(void *addr, u32 len);
 void patchmenu(void *addr, u32 len, int patchnum);
 void langpatcher(void *addr, u32 len);
 void vidolpatcher(void *addr, u32 len);
+void nossl(void *addr, u32 len);
 void PatchCountryStrings(void *Address, int Size);
 void PatchAspectRatio(void *addr, u32 len, u8 aspect);
 
