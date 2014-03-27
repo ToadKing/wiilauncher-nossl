@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<app version="1">
+    <name>WiiLauncher</name>
+    <coder>conanac</coder>
+    <version>0.1</version>
+    <release_date>20130218</release_date>
+    <short_description>WiiLauncher</short_description>
+    <long_description>An alternative to GeckoOS for Nintendo Wii and Wii-U (running WiiMode)</long_description>
+    <ahb_access/>
+    <no_ios_reload/>
+    <arguments>
+       <arg>-aXXX.XXX.XXX.XXX</arg>
+       <arg>-p4405</arg>
+	   <arg>-d1</arg>
+    </arguments>
+</app>
